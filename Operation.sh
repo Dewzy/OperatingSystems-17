@@ -1,5 +1,5 @@
 #!/bin/bash
-read -p
+read -p "What is the name of your file?  " name
 git add .
-git commit -m "$1"
+git commit -m $name
 git push -u origin master
