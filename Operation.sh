@@ -1,5 +1,5 @@
 #!/bin/bash
-read -p "What is the name of your file?  " name
+read -p "Enter your comment?  " comment
 git add .
-git commit -m "$name"
+git commit -m "$comment"
 git push -u origin master

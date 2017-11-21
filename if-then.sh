@@ -1,12 +1,10 @@
 #!/bin/bash
-read -p "Enter a number: " num
+read -p "Enter a number between 1 and 20:  " num
 
-if [ $num -eq 20 ] 
+if [ $num -le 10 ] 
 then 
-	echo "Sorry, kid. Better luck next year.."
-elif [ $num -lt 21 ]  
+	echo "Your number is 10 or less."
+elif [ $num -gt 10 ]  
 then
-	echo "You are too young to purchase alcohol."
-else 
-	echo "Welcome to the big show. Please drink responsibly."
+	echo "Your number is greater than 10."
 fi

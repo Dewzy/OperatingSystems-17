@@ -1,7 +1,8 @@
 #!/bin/bash
 
-for car in Toyota Honda Ford Tesla Chevy BMW Jeep VW 
+for car in $(cat cars.txt)
 do 
 	echo "$car"
-	sleep 2
+	sleep 1
+	
 done
